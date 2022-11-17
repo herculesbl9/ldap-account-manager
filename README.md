@@ -11,10 +11,6 @@ of the code and to fulfill all its functions.
 
 ## Docker
 
-::: center
-![image](images/docker.png){width="10%"}
-:::
-
 Docker is a software package that uses virtualisation in order to
 seclude pieces of software into their own containers. By doing that,
 each one of them is able to run independently and without causing
@@ -41,10 +37,6 @@ agnostic and run on any OS without issue.
 
 ### Docker images in use
 
-::: center
-![image](images/osixia.png){width="10%"}
-:::
-
 In order to easily install and programatically manage an LDAP server,
 instead of installing it on the computer itself (on bare metal) a docker
 image with OpenLdap was preferred. The one chosen (and perhaps one of
@@ -54,29 +46,17 @@ can be found on [github](https://github.com/osixia/docker-openldap).
 
 ## OpenLDAP
 
-::: center
-![image](images/openldap.png){width="10%"}
-:::
-
 OpenLDAP is a freely available, open source implementation of the
 Lightweight Directory Access Protocol. More information about it can be
 found on the official [OpenLDAP website](https://www.openldap.org).
 
 ## Bootstrap
 
-::: center
-![image](images/bootstrap-logo-shadow.png){width="10%"}
-:::
-
 Bootstrap is a powerful frontend toolkit that provides many necessary
 tools to aleviate the burden of CSS programming that falls out the scope
 of this project.
 
 ## Composer
-
-::: center
-![image](images/logo-composer-transparent5.png){width="10%"}
-:::
 
 Composer is a dependency manager for php. In combination with [private
 packagist](https://packagist.com/) it allows the programmer to easily
@@ -88,10 +68,6 @@ information about composer can be found on its [official
 website](https://getcomposer.org/).
 
 ### PHPMailer
-
-::: center
-![image](images/phpmailer.png){width="10%"}
-:::
 
 PHPMailer is maybe the most used library for sending e-mail in PHP.
 Since the SMTP server used for email communication resides on a
