@@ -377,4 +377,4 @@ not been altered in any way**, in accordance with the license.
 
 [^7]: LDAP Groups: beyond the obvious use of grouping users, further
     uses of this function, as well as information about it can be found
-    on the [LDAP wiki website](https://ldapwiki.com/wiki/LDAP Group).
+    on the [LDAP wiki website](https://ldapwiki.com/wiki/LDAP%20Group).
