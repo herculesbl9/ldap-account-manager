@@ -99,9 +99,7 @@ connect.php, index.php and no-access.php.
 
 #### index.php
 
-::: center
 ![image](images/login.png){width="90%"}
-:::
 
 This page contains the login form for the app's users. After the user
 fills the form, its data is posted to the **connect.php** script that
@@ -115,9 +113,7 @@ happens will become apparent in the next sections of this guide.
 
 #### no-access.php
 
-::: center
 ![image](images/no-access.png){width="90%"}
-:::
 
 This page provides a generic message for the users, when the app is down
 for maintenance. A redirect to this page for all, or a group of users
@@ -137,9 +133,7 @@ that was used.
 
 #### index.php
 
-::: center
 ![image](images/index.png){width="90%"}
-:::
 
 The page in question displays the users data as those are stored on the
 database. Those are the UID number (which is required for the database
@@ -151,9 +145,7 @@ access level.
 
 #### edit-user.php
 
-::: center
 ![image](images/edit-user.png){width="90%"}
-:::
 
 This page allows the user to edit some of their own attributes. Those
 are:
@@ -176,9 +168,7 @@ InetOrgPerson schema.
 
 #### search.php
 
-::: center
 ![image](images/search.png){width="90%"}
-:::
 
 Even though a user can search for others from any page by using the
 search bar on top, the results are always displayed in the search page.
@@ -197,9 +187,7 @@ displayed (i.e. the one saved in the first row of the array, that is 0).
 *\
 This page can only be accessed by people in the admin group*
 
-::: center
 ![image](images/edit-users.png){width="90%"}
-:::
 
 This page displays all users saved on the database, broken into two
 groups, active and deactivated ones. To achieve that without
@@ -215,9 +203,7 @@ greater detail below.
 *\
 This page can only be accessed by people in the admin group*
 
-::: center
 ![image](images/edit-users-form.png){width="90%"}
-:::
 
 This page allows the administrators to edit any attribute of the user
 they need. In order to safely edit fields, without compromising the
@@ -235,9 +221,7 @@ deactivation instead of deletion whenever possible.
 *\
 This page can only be accessed by people in the admin group*
 
-::: center
 ![image](images/deactivate.png){width="90%"}
-:::
 
 After choosing the deactivate link from the edit-users.php page, the
 administrator is redirected to this page, on which they are asked to
@@ -248,21 +232,17 @@ in the code provided, the REST API of Rocket.Chat[^5] is utilized, to
 deactivate the user's account on that platform, however any available
 API can be added on the page's code.
 
-::: displayquote
 *Note: there is a corresponding page for enabling a disabled users
 account. That page executes the exact same code, just for the opposite
 reason. Visually it is only differentiated from this one with a green
 button instead of a red one.*
-:::
 
 #### create-account.php
 
 *\
 This page can only be accessed by people in the admin group*
 
-::: center
 ![image](images/create-account.png){width="90%"}
-:::
 
 This page is used to create a new account/record on the database for new
 users. The administrator types in the users name, surname, phone number
@@ -284,21 +264,17 @@ is the emailed to the user if the relevant option is checked. By using
 that way, the password is not known to the admin. It is also worth
 noting that the password are hashed before being saved on the server.
 
-::: displayquote
 *Note: in order to avoid any issues with the auto-populated fields, the
 app provides a seperate page, where all fields are editable by the user.
 **This should only be used by experienced users, since its incorrect use
 can irrevocably harm the database and its entries**.*
-:::
 
 #### edit-groups.php
 
 *\
 This page can only be accessed by people in the admin group*
 
-::: center
 ![image](images/edit-groups.png){width="90%"}
-:::
 
 Edit-groups.php allows for the creation, deletion and modification of
 LDAP Groups[^7]. In greater detail, administrators can create new
@@ -306,13 +282,11 @@ groups, delete any of the existing ones (except for admins, everybody
 and deactivated which are required for the operation of this app) and
 add or remove users from any group.
 
-::: displayquote
 *Note: Due to an LDAP limitation, a group **must** be created with at
 least one user and **cannot** at any time have less than one users. To
 circumvent that, the app automatically includes the user that created a
 group to it. That user can later be removed after others have been
 added.*
-:::
 
 ## Templates and Licenses
 
